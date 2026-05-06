@@ -2,7 +2,11 @@ import { createRouter, createWebHashHistory, Router } from "vue-router";
 import RouteConfig from "./Config";
 
 export function router(config: typeof RouteConfig): Router {
-    config.title && (document.title = config.title);
+    const {
+        title = document.title
+    } = config;
+
+    document.title = title;
 
     return createRouter({
         history: createWebHashHistory(),
