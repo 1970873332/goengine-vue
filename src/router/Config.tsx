@@ -1,4 +1,7 @@
-import { RouteConfig as BaseRouteConfig, RouteObject } from "@web/router/Config";
+import {
+    RouteConfig as BaseRouteConfig,
+    RouteObject,
+} from "@goengine/web/src/router/Config";
 import { RouteRecordRaw } from "vue-router";
 
 /**
@@ -21,7 +24,4 @@ type TRouteObject = RouteRecordRaw &
         children?: TRouteObject[];
     };
 
-export {
-    TRouteObject as RouteObject
-};
-
+export { TRouteObject as RouteObject };
