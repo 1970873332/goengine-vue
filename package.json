@@ -6,8 +6,11 @@
     "author": "Mr.Rui",
     "type": "module",
     "dependencies": {
-        "vue": "^3.5.25",
+        "@goengine/web": "workspace:*",
         "vue-router": "^4.6.3"
+    },
+    "peerDependencies": {
+        "vue": "^3.5.25"
     },
     "devDependencies": {}
 }
